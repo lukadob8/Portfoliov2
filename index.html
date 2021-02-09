@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LukaD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3>LD</h3>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__items"> <a href="#home" class="nav__link">Home</a> </li>
+                <li class="nav__items"> <a href="#services" class="nav__link">My Services</a> </li>
+                <li class="nav__items"> <a href="#about" class="nav__link">About</a> </li>
+                <li class="nav__items"> <a href="#work" class="nav__link">My Work</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- INTRODUCTION -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, I am <strong>Luka Dobrijevic</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">full stack web dev</p>
+        <img src="images/luka.jpg" alt="A picture of Luka" class="intro__img">
+    </section>
+
+
+    <!-- MY SERVICES -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Plan</h3>
+                <p>I can help you plan and design your project from the ground up. Everything from features to colour
+                    and layout. I will help you bring your dream project to life.</p>
+            </div>
+            <!--service-->
+
+            <div class="service">
+                <h3>Maintain</h3>
+                <p>I will be available to help you maintain your website as well as update it and improve it if
+                    necessary. My goal is to help you create something you love and that works for your needs. So as
+                    those needs change I will be here to help your technology change as well.</p>
+            </div>
+
+            <div class="service">
+                <h3 id="develop">Develop</h3>
+                <p>Next I will develop your website according to your desired design. Using technologies such as VueJS,
+                    SCSS and Javascript I will help build your vision and deploy it for the world to see.</p>
+            </div>
+            <!--service-->
+
+            
+         
+        </div>
+        <!--services-->
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+
+    <!-- ABOUT ME -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about">Full Stack Web Dev based in Edmonton AB</p>
+
+        <div class="about-me__body">
+            <p>My experience in web development began recently when the world was turned upside down by the pandemic.
+                After losing my previous job I found an opportunity to learn web development at InnoTech College. After
+                the 6 month program I have graduated and am excited to begin applying the skills I learned in the real
+                world.</p>
+            <p>The front end technologies I became familiar with in school are: <strong>HTML, CSS/SASS &
+                    Javascript/VueJS</strong>. While on the backend I used <strong>Python, Flask, MariaDB &
+                    SQL</strong>. However, I am always looking to learn new technologies while improving on my current
+                tech stack. My goal is to be able to bring value to any clients or employers I work with. </p>
+        </div>
+
+        <img src="images/luka2.jpg" alt="A picture of Luka smiling." class="about-me__img">
+    </section>
+
+
+    <!-- MY WORK -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Portfolio</h2>
+        <p class="section__subtitle section__subtitle--work">My current list of projects</p>
+
+        <div class="portfolio">
+
+            <!-- Portfolio item 1 -->
+            <a href="okoPizza.html" class="portfolio__item">
+                <img src="images/okoPizza.png" alt="A screenshot of a restaurant website" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 2 -->
+            <a href="tweeter.html" class="portfolio__item">
+                <img src="images/tweeter.png" alt="A screenshot of a twitter clone website" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 3 -->
+            <a href="uquery.html" class="portfolio__item">
+                <img src="images/uQuery.png" alt="A screenshot of the uQuery website" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="mailto:lukad@telus.net" class="footer__link">lukad@telus.net</a>
+        <p><a href="https://drive.google.com/file/d/1uSfPTYaR3Yh2MM0su8lsvm1vwOLHWC8t/view?usp=sharing" target="_blank">Resume</a></p>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/lukadob8" target="_blank" class="social-list__link"><i class="fab fa-github"></i></a>
+            </li>
+
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/luka-dobrijevic-aa6546a5/" target="_blank" class="social-list__link"><i
+                        class="fab fa-linkedin"></i></a>
+            </li>
+
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
